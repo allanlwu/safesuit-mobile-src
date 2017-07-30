@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Safety
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p class="input-page">
+    Please list a safety number you would like text messages with location information to be sent to periodically.
+  </p>
+  <form (ngSubmit)="logNumber()">
+    <ion-item>
+      <ion-label color="primary" stacked>Phone Number</ion-label>
+      <ion-input type="number" placeholder="Phone Number" [(ngModel)]="num" [ngModelOptions]="{standalone: true}"></ion-input>
+    </ion-item>
+    <button ion-button class="input-page" type="submit">Submit</button>
+  </form>
+</ion-content>
